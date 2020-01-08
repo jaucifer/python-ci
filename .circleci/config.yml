@@ -7,9 +7,8 @@ jobs:
       - checkout
       - run:
         name: Thisisatest 
-        command: |
-          pip install -r requirements.txt 
-          nosetests tests/math-test.py
+        command: pip install -r requirements.txt 
+        nosetests tests/math-test.py
 workflows:
   version: 2
   build-tests:
