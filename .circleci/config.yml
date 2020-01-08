@@ -10,5 +10,6 @@ jobs:
           pip install --user -r requirements.txt 
           nosetests tests/math-test.py
 workflows:
-  jobs:
-    - math-test
+  build-tests:
+    jobs:
+      - math-test
