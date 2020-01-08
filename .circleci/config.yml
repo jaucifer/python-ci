@@ -6,9 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
-        command: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
+        command: pip install --upgrade pip
+      - run:
+        command: pip install -r requirements.txt
         
 workflows:
   version: 2
