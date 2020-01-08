@@ -5,8 +5,7 @@ jobs:
       - image: circleci/python:3.5.2
     steps:
       - checkout
-      - run:
-        command: pip install --user -r requirements.txt 
+      - run: pip install --user -r requirements.txt 
       - run:
         command: nosetests tests/math-test.py 
         
