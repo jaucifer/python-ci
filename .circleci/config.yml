@@ -11,4 +11,4 @@ jobs:
           nosetests tests/math-test.py
 workflows:
   jobs:
-    - run: math-test
+    - math-test
