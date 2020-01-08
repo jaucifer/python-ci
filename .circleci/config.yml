@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-        commands: |
+        command: |
           pip install -r requirements.txt 
           nosetests tests/math-test.py
 workflows:
