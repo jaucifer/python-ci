@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-        command: pip install --upgrade pip
+        command: pip install --user -r requirements.txt
         
 workflows:
   version: 2
