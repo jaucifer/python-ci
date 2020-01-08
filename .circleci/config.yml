@@ -6,6 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
+        name: Thisisatest 
         command: |
           pip install -r requirements.txt 
           nosetests tests/math-test.py
