@@ -5,9 +5,10 @@ jobs:
       - image: circleci/python:3.5.2
     steps:
       - checkout
-      commands: |
-        pip install --user -r requirements.txt 
-        nosetests tests/math-test.py
+      - run:
+        commands: |
+          pip install --user -r requirements.txt 
+          nosetests tests/math-test.py
 workflows:
   jobs:
     - run: math-test
