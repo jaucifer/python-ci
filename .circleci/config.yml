@@ -6,6 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
+        name: testing
         command: pip install -r requirements.txt
         
 workflows:
