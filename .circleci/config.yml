@@ -2,7 +2,7 @@ version: 2
 jobs:
   math-test:
     docker:
-      - image: circleci/python:3.6.4
+      - image: circleci/python:jessie-node-browsers
     steps:
       - checkout
       - run: 
