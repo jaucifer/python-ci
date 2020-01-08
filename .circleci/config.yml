@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: "Setup custom environment variables // its your workflow step"
-          command: pip install -r requirements.txt
+          command: pip install --user -r requirements.txt
         
 workflows:
   version: 2
