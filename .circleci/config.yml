@@ -8,7 +8,7 @@ jobs:
       - run:
         name: Thisisatest 
         command: |
-        sudo pip install -r requirements.txt 
+        sudo pip install --user -r requirements.txt 
         nosetests tests/math-test.py
 workflows:
   version: 2
