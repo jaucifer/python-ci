@@ -8,6 +8,9 @@ jobs:
       - run:
           name: "Setup custom environment variables // its your workflow step"
           command: pip install --user -r requirements.txt
+      - run: 
+          name: "doing the test"
+          command: nosetests tests/math-test.py
         
 workflows:
   version: 2
