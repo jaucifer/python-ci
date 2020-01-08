@@ -9,4 +9,3 @@ mccabe == 0.6.1
 nose == 1.3.7
 packaging == 16.8
 requests == 2.13.0
-wrapt == 1.10.8
