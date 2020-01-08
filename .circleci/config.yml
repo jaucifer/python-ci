@@ -1,11 +1,13 @@
-machine:
-  python:
-    version: 3.5.2
-
-dependencies:
-  override:
-    - pip install -r ../requirements.txt
-
-test:
-  override:
-    - nosetests ../tests/math-test.py
+version: 2
+jobs:
+  math-test:
+    docker:
+      - image: circleci/python:3.5.2
+    steps:
+      - checkout
+      commands: |
+        pip install --user -r requirements.txt 
+        nosetests tests/math-test.py
+workflows:
+  jobs:
+    - run: math-test
