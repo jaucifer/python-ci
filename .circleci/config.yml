@@ -6,8 +6,7 @@ jobs:
     steps:
       - checkout
       - run: 
-        command: |
-          nosetests tests/math-test.py 
+        command: nosetests tests/math-test.py 
         
 workflows:
   version: 2
