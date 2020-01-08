@@ -2,11 +2,11 @@ version: 2
 jobs:
   math-test:
     docker:
-      - image: circleci/python:jessie-node-browsers
+      - image: circleci/python:3.6.4
     steps:
       - checkout
-      - run: 
-        command: nosetests tests/math-test.py 
+      - run: # base image is python, so we run `nosetests`, an extension of `unittest`
+          command: nosetests tests/math-test.py 
         
 workflows:
   version: 2
