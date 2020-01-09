@@ -13,7 +13,9 @@ jobs:
           command: nosetests test/math-test.py
       - run: 
           name: "Generate report"
-          command: coverage run src/*.py && coverage report
+          command: |
+            coverage run src/*.py && coverage report
+            coveralls
                 
 workflows:
   version: 2
