@@ -15,7 +15,6 @@ jobs:
           name: "Generate report"
           command: |
             coverage run src/*.py && coverage report
-            coveralls
                 
 workflows:
   version: 2
